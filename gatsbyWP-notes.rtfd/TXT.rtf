@@ -1,0 +1,481 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2706
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fswiss\fcharset0 Helvetica;\f2\froman\fcharset0 Times-Bold;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red254\green244\blue139;\red38\green38\blue38;
+\red243\green249\blue255;\red149\green151\blue21;\red38\green170\blue22;\red192\green5\blue193;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c99608\c95686\c61176;\cssrgb\c20000\c20000\c20000;
+\cssrgb\c96078\c98039\c100000;\cssrgb\c65052\c64773\c9742;\cssrgb\c15099\c70608\c10709;\cssrgb\c80596\c19757\c80008;}
+\margl1440\margr1440\vieww19920\viewh14940\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+Database Name: gatsbywp_db\
+User Name: lukedohner\
+Password: 35XC(KaaygCh)iec6W\
+\
+Use the same for /admin\
+\pard\pardeftab720\partightenfactor0
+\cf0 User Name: lukedohner\
+Password: 35XC(KaaygCh)iec6W\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+Database Host: localhost (default)\
+Table Prefix:  wp_  (default)\
+\
+//////\
+http://localhost:8888/\
+\
+http://localhost:8888/wp-admin/index.php\
+\
+MAMP\
+http://localhost:8888/MAMP/?language=English\
+\
+phpMyAdmin\
+http://localhost:8888/phpMyAdmin5/index.php?route=/database/structure&db=gatsbywp_db\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\fs52 \cf0 \kerning1\expnd0\expndtw0 ftp://heavy010@heavyyoga.com/lukedohner.com/www/fineart2\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+http://\{
+\f0\b0\fs44 209.122.241.135
+\f2\b\fs28 \}/phpmyadmin/index.php\
+\
+start local host\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b0\fs26 \cf0 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 sudo apachectl start\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+video on how to deploy Gatsbyjs and word press to GIT Hub\
+https://www.google.com/search?client=firefox-b-1-d&q=gatsby+wordpress+deploy+to+github#fpstate=ive&vld=cid:307c22b4,vid:oK5yJ2OTJHM\
+\
+Look at gatsbyjs.org/packages/gatsby-source-wordpress
+\fs28 \outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf0 Log:\
+Jan 16 Luke set up Key Chain Access > Root Certificate Authority aka CA > Luke DOhenr\'92s CA\
+\
+Jan 17 Luke \outl0\strokewidth0 changed this file: /private/var/run/httpd.pid\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Old https file had :: 13161\
+Added \
+\
+MMAP seemed to change to 17609\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \outl0\strokewidth0 \
+Jan 18 \
+Luke modified config.php file to the setting at the top of this page\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Jan 26 Luke added to tweet tweet two theme functions.php\
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');\
+\
+Jan 27\
+Added to gatsby-node.js line 343\
+          products: [\
+            productList.product1,\
+            productList.product2,\
+            productList.product3,\
+           -> productList.product4,\
+          ]\
+\
+Jan 30 \
+Update gatsby-source-wordpress node package
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf0 \
+\
+Feb 2nd \
+Added WordPress plug-in ACF to Rest API\
+\
+Change Gatsby config.js to this:\
+  plugins: [\
+    \{\
+      resolve: `gatsby-source-wordpress`,\
+      options: \{\
+       >> url: "localhost",\
+        protocol:"http",\
+      >>  useACF: true,\
+        verboseOutput: true,\
+        debug: \{\
+          preview: true,\
+        \},\
+      \},\
+    \},\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf0 \
+///////////////////////////
+\fs28 \
+//////End Log/////\outl0\strokewidth0 \strokec2 \
+
+\fs24 \outl0\strokewidth0 /////////////////////////
+\fs28 \
+console.log(data)\
+\
+installed Gatsby-source-wordpress versions\
+now in stalled 3.11.0\
+Newest 7.5.0\
+\
+How to fix.\
+1. Install newest G-source-WP\
+\
+2. Reintall Gatsby starter Connect to present WP install.\
+\
+\
+\
+Menus from WP\
+https://www.youtube.com/watch?v=4hn49ZFhSzc\
+Install this WP plug in: WP API Menus\
+Give endpoints\
+\
+\
+\
+\
+Look up plug in Faker Post\
+\
+\
+
+\f3\fs26 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\pardeftab720\qj\partightenfactor0
+
+\f4\fs27\fsmilli13700 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 find -L /etc/apache2 -type f -print0 | xargs -0 grep -i "^loadmodule.*php"\
+/etc/apache2/other/00-httpd.conf:LoadModule php_module /opt/homebrew/opt/php/lib/httpd/modules/libphp.so\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \cb1 \strokec2 from ChatGPT\
+configuration settings for your Apache server
+\f4\fs27\fsmilli13700 \cf4 \cb5 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf0 \cb1 \strokec2 httpd -V\
+\pard\pardeftab720\qj\partightenfactor0
+
+\fs27\fsmilli13700 \cf4 \cb5 \strokec4 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \cb1 \strokec2 You can also use the following command to find the location of the httpd.conf file,
+\f4\fs27\fsmilli13700 \cf4 \cb5 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs30 \cf0 \cb1 \strokec2 sudo apachectl -S\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \strokec2 \
+\
+/private/var/run/httpd.pid\
+\
+Old https file had :: 13161\
+\
+Apache port 8888\
+MySQL port 8889\
+\
+phpMyAdmin:\
+http://localhost:8888/phpMyAdmin5/\outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+goes in functions.php\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 \outl0\strokewidth0 \strokec2 // ACF Display Custom Fields\
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 \outl0\strokewidth0 \
+\
+This worked Jan 24 2023\
+query McQuery \{\
+  pages \{\
+    nodes \{\
+      title\
+      uri\
+      content\
+      isFrontPage\
+      contentType \{\
+        node \{\
+          description\
+          label\
+        \}\
+        cursor\
+      \}\
+      id\
+      date\
+      featuredImage \{\
+        node \{\
+          uri\
+        \}\
+      \}\
+      homepage \{\
+        description\
+        fieldGroupName\
+        imageHomepage \{\
+          uri\
+          author \{\
+            node \{\
+              description\
+            \}\
+          \}\
+          contentType \{\
+            node \{\
+              id\
+            \}\
+          \}\
+        \}\
+        testFieldAddedByLuke\
+        title\
+        wysiwygEditor\
+      \}\
+    \}\
+  \}\
+\}\
+\
+\
+\
+\
+\
+\
+This worked Jan 24\
+query McQuery\{\
+  pages\{\
+    nodes\{\
+      title\
+      uri\
+      content\
+      isFrontPage\
+    \}\
+  \}\
+\}\
+\
+\
+query McQuery \{\
+  pages \{\
+    nodes \{\
+      title\
+      uri\
+      content\
+      isFrontPage\
+      isPostsPage\
+      pageId\
+      contentType \{\
+        node \{\
+          id\
+        \}\
+      \}\
+      featuredImage \{\
+        node \{\
+          id\
+          contentType \{\
+            node \{\
+              id\
+            \}\
+          \}\
+          mediaDetails \{\
+            height\
+          \}\
+          uri\
+          title(format: RAW)\
+          sourceUrl\
+        \}\
+      \}\
+    \}\
+  \}\
+  page(id: "") \{\
+    id\
+    homepage \{\
+      title\
+      testFieldAddedByLuke\
+      fieldGroupName\
+    \}\
+  \}\
+  pageBy \{\
+    id\
+    homepage \{\
+      fieldGroupName\
+      testFieldAddedByLuke\
+      title\
+    \}\
+  \}\
+\}\
+\
+\
+this worked Jan 26\
+  wpGatsby \{\
+    gatsbyPreviewStatus(nodeId: 1.5) \{\
+      modifiedLocal\
+      modifiedRemote\
+      remoteStatus\
+      statusContext\
+      statusType\
+    \}\
+  \}\
+  pages \{\
+    edges \{\
+      node \{\
+        id\
+      \}\
+    \}\
+  \}\
+  page(id: "") \{\
+    homepage \{\
+      description\
+      fieldGroupName\
+      testFieldAddedByLuke\
+      title\
+    \}\
+  \}\
+\}\
+\
+this worked jan 28\
+query McQuery \{\
+  pages \{\
+    edges \{\
+      node \{\
+        homepage \{\
+          productList \{\
+            product1 \{\
+              fieldGroupName\
+              heading\
+              text\
+            \}\
+            product4 \{\
+              fieldGroupName\
+              heading\
+              text\
+            \}\
+            product3 \{\
+              fieldGroupName\
+              text\
+            \}\
+            product2 \{\
+              fieldGroupName\
+              heading\
+              text\
+            \}\
+          \}\
+          statList \{\
+            fieldGroupName\
+            heading\
+            kicker\
+            text\
+          \}\
+          description\
+          benefitList \{\
+            benefit1 \{\
+              text\
+              heading\
+            \}\
+          \}\
+        \}\
+        title\
+        id\
+      \}\
+    \}\
+  \}\
+\}\
+\
+query McQuery \{\
+  pageBy(id: "cG9zdDozNg==") \{\
+    pageId\
+    title\
+    homepage \{\
+      description\
+      productList \{\
+        fieldGroupName\
+        heading\
+        kicker\
+        product1 \{\
+          fieldGroupName\
+          heading\
+          image \{\
+            id\
+            uri\
+          \}\
+        \}\
+      \}\
+    \}\
+  \}\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 query McQuery \{\
+  pageBy(id: "cG9zdDozNg==") \{\
+    pageId\
+    title\
+    homepage \{\
+      id\
+      title\
+      description\
+      image \{\
+        id\
+        url\
+      \}\
+      blocks: content \{\
+        id\
+        blocktype\
+        ...HomepageHeroContent\
+        ...HomepageFeatureListContent\
+        ...HomepageCtaContent\
+        ...HomepageLogoListContent\
+        ...HomepageTestimonialListContent\
+        ...HomepageBenefitListContent\
+        ...HomepageStatListContent\
+        ...HomepageProductListContent\
+      \}\
+    \}\
+  \}\
+\}\
+\
+midjourny.com\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf6 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 gatsby-source-wordpress\cf0 \cb3     3.11.0  \cf7 \cb3 3.11.0\cf0 \cb3    \cf8 \cb3 7.5.0\cf0 \cb3   node_modules/gatsby-source-wordpress   gatsby-starter-wordpress-homepage\cf6 \cb3 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec2 npm update -g <package_name>\
+\pard\pardeftab720\partightenfactor0
+\cf0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf0 \strokec2 gatsby-source-wordpress
+\f0\b0 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \outl0\strokewidth0 npm update -g  
+\f2\b gatsby-source-wordpress
+\f0\b0\fs28 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 \outl0\strokewidth0 \strokec2 npm i gatsby-source-wordpress
+\f0\fs24 \outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+package json was  "gatsby-source-wordpress": "^3.11.0",\outl0\strokewidth0 \strokec2 \
+}
